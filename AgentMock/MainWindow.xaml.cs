@@ -25,7 +25,7 @@ namespace AgentMock
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_0(object sender, RoutedEventArgs e)
         {
             LoginWindow loginWindow = new LoginWindow();
             if (loginWindow.ShowDialog() == true)
@@ -35,6 +35,12 @@ namespace AgentMock
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            DelayedWindow dw = new DelayedWindow(5000);
+            dw.Show();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             PasswordChangeWindow cpWindow = new PasswordChangeWindow();
             if (cpWindow.ShowDialog() == true)

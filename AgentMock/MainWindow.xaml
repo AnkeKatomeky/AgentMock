@@ -7,9 +7,12 @@
         mc:Ignorable="d"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
-        Title="MainWindow" Height="500" Width="400">
+        Title="MainWindow"
+        Height="500" 
+        Width="400">
     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button FontSize="20" Margin="10" Padding="10" Click="Button_Click">Open Login screen</Button>
-        <Button FontSize="20" Margin="10" Padding="10" Click="Button_Click_1">Open Change password screen</Button>
+        <Button FontSize="20" Margin="10" Padding="10" Click="Button_Click_0">Open Login screen</Button>
+        <Button FontSize="20" Margin="10" Padding="10" Click="Button_Click_1">Open Delayed Login screen</Button>
+        <Button FontSize="20" Margin="10" Padding="10" Click="Button_Click_2">Open Change password screen</Button>
     </StackPanel>
 </Window>
