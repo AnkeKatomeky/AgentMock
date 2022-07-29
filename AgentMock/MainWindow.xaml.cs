@@ -32,6 +32,8 @@ namespace AgentMock
             {
                 MessageBox.Show($"Login ready\n\rLogin-{loginWindow.Login}\n\rPassword-{loginWindow.Password}");
             }
+
+            MessageBox.Show($"Login ready\n\rLogin-{loginWindow.Login}\n\rPassword-{loginWindow.Password}");
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
