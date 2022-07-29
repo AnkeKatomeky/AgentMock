@@ -24,15 +24,12 @@ namespace AgentMock
     /// <summary>
     /// Interaction logic for PasswordChangeScreen.xaml
     /// </summary>
-    public partial class PasswordChangeWindow : Window, INotifyPropertyChanged
+    public partial class PasswordChangeWindow : Window
     {
         public string Login;
         public string OldPassword;
         public string NewPassword;
         public string NewRepeatPassword;
-
-        private string _validationRegex = @"^(\d{1,5}|\d{0,5}\.\d{1,2})$";
-        public bool IsPasswordError { get; set; }
 
         public PasswordChangeWindow()
         {
@@ -48,20 +45,6 @@ namespace AgentMock
             NewRepeatPassword = NewRepeatPasswordBox.Password;
             DialogResult = true;
             Close();
-        }
-
-        private void NewPasswordBox_OnPasswordChanged(object sender, RoutedEventArgs e)
-        {
-            IsPasswordError = ((PasswordBox) sender).Password.Contains('a');
-            OnPropertyChanged(nameof(IsPasswordError));
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        [NotifyPropertyChangedInvocator]
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

@@ -31,7 +31,6 @@ namespace AgentMock
         {
             Login = LoginBox.Text;
             Password = PasswordBox.Password;
-            MessageBox.Show($"login - {Login}\n\rpassword - {Password}");
             Close();
         }
     }

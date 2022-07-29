@@ -10,7 +10,7 @@
         Title="LoginWindow" 
         Height="500"
         Width="400">
-    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" FocusManager.FocusedElement="{Binding ElementName=LoginBox}">
         <Label>login</Label>
         <TextBox Name="LoginBox" Width="250" FontSize="20" Margin="10" Padding="10"></TextBox>
         <Label>Password</Label>
